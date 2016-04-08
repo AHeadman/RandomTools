@@ -1,0 +1,24 @@
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      aheadman
+#
+# Created:     07/04/2016
+# Copyright:   (c) aheadman 2016
+# Licence:     GNU-GPL
+#-------------------------------------------------------------------------------
+
+import zipfile, os
+
+
+
+def zip_file_extract (directory, output_dir):
+    for file in os.listdir(directory):
+        if file.endswith(".zip"):
+            zip_ref = zipfile.ZipFile(directory+os.path.sep+file, 'r')
+            zip_ref.extractall(output_dir)
+            zip_ref.close()
+
+
+zip_file_extract('d:\\ifsar\\dtm\\', 'd:\\ifsar\\dtm\\')
