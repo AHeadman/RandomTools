@@ -1,16 +1,10 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
 # Author:      aheadman
 #
-# Created:     07/04/2016
+# Created:     07/03/2016
 # Copyright:   (c) aheadman 2016
 # Licence:     GNU-GPL
-#-------------------------------------------------------------------------------
 
 import zipfile, os
-
 
 
 def zip_file_extract (directory, output_dir):
