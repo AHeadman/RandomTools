@@ -1,11 +1,14 @@
 # Author:      aheadman
-#
 # Created:     07/03/2016
 # Copyright:   (c) aheadman 2016
 # Licence:     GNU-GPL
+#
+# Occasionally you get a zip file full of other zipfiles 
+# and everything needs to be in the same DIR.  This is particularly true
+# with remote sensing products from NASA, LiDAR products, and other large 
+# Remote Sensing dataset downloads.  This script does that.
 
 import zipfile, os
-
 
 def zip_file_extract (directory, output_dir):
     for file in os.listdir(directory):
